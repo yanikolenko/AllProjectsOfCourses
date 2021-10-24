@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SecondScreenCourses</string>
+
+    <string-array name="email_array">
+        <item>Email Type</item>
+    </string-array>
+
+    <string-array name="phone_array">
+        <item>Phone Type</item>
+    </string-array>
+
+</resources>

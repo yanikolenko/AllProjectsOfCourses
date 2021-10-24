@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mainImg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:background="#e6e6e6"
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_img" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainImg"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/camera_img"
+        android:layout_marginTop="-36dp"
+        android:layout_marginEnd="19dp" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/containerName"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/mainImg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/name_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editName"
+            android:hint="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/containerPhoneNumber"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/containerName"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/phone_number_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editPhoneNumber"
+            android:hint="Phone Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:minHeight="48dp"
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/containerEmail"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/containerPhoneNumber"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/email_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/editEmail"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:minHeight="48dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/containerAddress"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/containerEmail"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/address_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:hint="Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/containerCompany"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/containerAddress"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/company_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editCompany"
+            android:hint="Company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
