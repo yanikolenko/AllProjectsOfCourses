@@ -9,3 +9,5 @@ dependencyResolutionManagement {
 rootProject.name = "FirstScreenCourses"
 include ':p51project'
 include ':p52project'
+include ':p61project'
+include ':p62project'
