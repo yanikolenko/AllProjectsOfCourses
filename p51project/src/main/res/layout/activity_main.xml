@@ -61,9 +61,10 @@
         android:layout_height="0dp">
 
         <RadioButton
-            android:text="Female"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="Female"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:text="Male"
