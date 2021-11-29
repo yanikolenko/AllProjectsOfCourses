@@ -1,6 +1,5 @@
-package com.yaroslavnikolenko.p81project
+package com.yaroslavnikolenko.p91project
 
-import InfoAboutCountry
 import android.app.Activity
 import android.content.Context
 import android.content.Intent

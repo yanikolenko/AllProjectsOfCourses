@@ -7,18 +7,20 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.*
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : AppCompatActivity() {
 
     var radioAnimals: RadioButton? = null
     var radioGroup: RadioGroup? = null
-    private var flag: Boolean = true
     var radioPlants: RadioButton? = null
     var nameOfBeing: TextView? = null
     var describeOfBeing: TextView? = null
     var generalImg: ImageView? = null
 
     var myRes: String? = null
+
+    var vm: MainViewModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,21 +34,33 @@ class MainActivity : AppCompatActivity() {
         describeOfBeing = findViewById(R.id.describeOfBeing)
         generalImg = findViewById(R.id.generalPhoto)
 
+        ////////////////////////////////////////////////////////////////////////////////
+        vm = ViewModelProvider(this).get(MainViewModel::class.java)
+        ////////////////////////////////////////////////////////////////////////////////
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.my_menu, menu)
-        setNewValues(R.drawable.sparrow, resources.getString(R.string.sparrowName), resources.getString(R.string.sparrowDescribe))
+
+        try {
+            setNewValues(vm!!.liveDataImg.value!!, vm!!.liveDataTitle.value!!, vm!!.liveDataSubTitle.value!!)
+        }catch (e: NullPointerException){
+            setNewValues(R.drawable.sparrow, resources.getString(R.string.sparrowName), resources.getString(R.string.sparrowDescribe))
+        }
         return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         myRes = resources.getResourceEntryName(item.itemId)
+        vm!!.liveDataImg.value = resources.getIdentifier(myRes, "drawable", packageName)
+        vm!!.liveDataTitle.value = item.toString()
 
         try {
             val value = getString(resources.getIdentifier(resources.getResourceEntryName(item.itemId).plus("Describe"), "string", packageName))
-            setNewValues(resources.getIdentifier(myRes, "drawable", packageName), item.toString(), value)
+            vm!!.liveDataSubTitle.value = value
+            setNewValues(vm!!.liveDataImg.value!!, vm!!.liveDataTitle.value!!, vm!!.liveDataSubTitle.value!!)
         }catch (e: Resources.NotFoundException){
 
         }
@@ -55,10 +69,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
-        if (!onCheckedRadio()){
+        if (onCheckedRadio()){
             menu!!.setGroupVisible(R.id.groupOfAnimals, true)
             menu.setGroupVisible(R.id.groupOfPlants, false)
-        }else if (onCheckedRadio()){
+        }else if (!onCheckedRadio()){
             menu!!.setGroupVisible(R.id.groupOfAnimals, false)
             menu.setGroupVisible(R.id.groupOfPlants, true)
         }
@@ -71,16 +85,16 @@ class MainActivity : AppCompatActivity() {
         radioGroup!!.setOnCheckedChangeListener { _, checkedId ->
             when (checkedId){
                 R.id.animal -> {
-                    flag = true
+                    vm!!.liveDataBoolean.value = true
                     setNewValues(R.drawable.sparrow, resources.getString(R.string.sparrowName), resources.getString(R.string.sparrowDescribe))
                 }
                 R.id.plant -> {
-                    flag = false
+                    vm!!.liveDataBoolean.value = false
                     setNewValues(R.drawable.sosna, resources.getString(R.string.sosnaName), resources.getString(R.string.sosnaDescribe))
                 }
             }
         }
-        return flag
+        return vm!!.liveDataBoolean.value!!
     }
 
     private fun setNewValues(image: Int, name: String, describe: String ){
