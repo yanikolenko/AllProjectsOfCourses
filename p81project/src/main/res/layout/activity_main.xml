@@ -102,7 +102,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="291dp"
         tools:layout_editor_absoluteY="209dp">
-
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
     <LinearLayout
