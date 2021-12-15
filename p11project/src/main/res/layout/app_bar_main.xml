@@ -15,24 +15,18 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#484B5B"
+            android:background="@color/main_app_color"
             app:popupTheme="@style/Theme.WeatherApplication.PopupOverlay" >
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/toolbarTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:text="Черкаси, Україна"
+                    android:layout_gravity="center"
+                    android:text="@string/before_give_data"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     android:textStyle="bold" />
-
-            </RelativeLayout>
 
         </androidx.appcompat.widget.Toolbar>
 

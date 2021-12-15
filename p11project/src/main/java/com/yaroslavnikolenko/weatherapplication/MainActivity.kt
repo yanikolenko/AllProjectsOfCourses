@@ -13,42 +13,25 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.yaroslavnikolenko.weatherapplication.databinding.ActivityMainBinding
-import com.yaroslavnikolenko.weatherapplication.ui.twenyFourWeather.FiveDaysWeather
+import com.yaroslavnikolenko.weatherapplication.ui.twenyFourWeather.TwentyFourWeather
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityMainBinding
-    lateinit var toolbarText: TextView
-    lateinit var fiveDaysWeather: FiveDaysWeather
+    private var appBarConfiguration: AppBarConfiguration? = null
+    private var binding: ActivityMainBinding? = null
+    private var toolbarText: TextView? = null
+    private var twentyFourWeather: TwentyFourWeather? = null
+    var navBottomView : BottomNavigationView? = null
+    var drawerLayout: DrawerLayout? = null
+    var navView: NavigationView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        setSupportActionBar(binding.appBarMain.toolbar)
-
-        val drawerLayout: DrawerLayout = binding.drawerLayout
-        val navView: NavigationView = binding.navView
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        val navBottomView : BottomNavigationView = findViewById(R.id.bottomNavigationView)
-
-        appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_report, R.id.nav_share, R.id.WeatherTypeFragment, R.id.WeatherTodayFragment, R.id.WeatherRadarFragment, R.id.WeatherForecastFragment
-            ), drawerLayout
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
-        navBottomView.setupWithNavController(navController)
-
-        toolbarText = findViewById(R.id.toolbarTextView)
-        fiveDaysWeather = FiveDaysWeather()
-        fiveDaysWeather.resultLocation.observe(this){
-            toolbarText.text = it.region
-        }
+        bind()
+        initUI()
+        navigation()
+        observe()
 
     }
 
@@ -58,9 +41,44 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-
         val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+        return navController.navigateUp(appBarConfiguration!!) || super.onSupportNavigateUp()
 
     }
+
+    private fun initUI(){
+        toolbarText = findViewById(R.id.toolbarTextView)
+        navBottomView = findViewById(R.id.bottomNavigationView)
+    }
+
+    private fun bind(){
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding?.root)
+
+        setSupportActionBar(binding?.appBarMain?.toolbar)
+
+        drawerLayout = binding!!.drawerLayout
+        navView = binding!!.navView
+    }
+
+    private fun navigation(){
+        appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_report, R.id.nav_share, R.id.WeatherTypeFragment, R.id.WeatherTodayFragment, R.id.WeatherRadarFragment, R.id.WeatherForecastFragment
+            ), drawerLayout
+        )
+
+        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        setupActionBarWithNavController(navController, appBarConfiguration!!)
+        navView?.setupWithNavController(navController)
+        navBottomView?.setupWithNavController(navController)
+    }
+
+    private fun observe(){
+        twentyFourWeather = TwentyFourWeather()
+        twentyFourWeather?.resultLocation?.observe(this){
+            toolbarText?.text = it.region
+        }
+    }
+
 }

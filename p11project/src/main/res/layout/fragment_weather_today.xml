@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#484B5B"
+    android:background="@color/main_app_color"
     tools:context=".ui.WeatherToday">
 
 
@@ -16,7 +16,7 @@
             android:background="@drawable/border"
             android:paddingHorizontal="10dp"
             android:paddingVertical="5dp"
-            android:text="date"
+            android:text="@string/before_give_data"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="20°/11°, відчувається як 15°C"
+            android:text="@string/before_give_data"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/imageView3"
             app:layout_constraintStart_toStartOf="@+id/imageView3"
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="140dp"
             android:layout_marginEnd="32dp"
-            android:text="---"
+            android:text="@string/before_give_data"
             android:textColor="@color/white"
             android:textSize="50sp"
             android:textStyle="bold"
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:gravity="center"
-            android:text="Мінлива хмарність"
+            android:text="@string/before_give_data"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/mainTemperatureView"
             app:layout_constraintHorizontal_bias="0.901"
@@ -75,10 +75,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="Вітер 9 км/год, півд-зах"
+            android:text="@string/before_give_data"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/descriptionView"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/descriptionView"
             app:layout_constraintTop_toBottomOf="@+id/descriptionView" />
 

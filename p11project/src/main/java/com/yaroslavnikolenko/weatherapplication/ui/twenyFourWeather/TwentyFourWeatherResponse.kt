@@ -2,7 +2,7 @@ package com.yaroslavnikolenko.weatherapplication.ui
 
 import com.google.gson.annotations.SerializedName
 
-data class Response2(
+data class TwentyFourWeatherResponse(
 
 	@field:SerializedName("current")
 	val current: Current? = null,

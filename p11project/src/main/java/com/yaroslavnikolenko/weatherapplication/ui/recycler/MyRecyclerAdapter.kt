@@ -11,12 +11,12 @@ import com.yaroslavnikolenko.weatherapplication.R
 import com.yaroslavnikolenko.weatherapplication.ui.HourItem
 import com.squareup.picasso.Picasso
 
-class MyRecyclerAdapter(val context: Context, val array1: List<HourItem?>): RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder>() {
+class MyRecyclerAdapter(val context: Context, val data: List<HourItem?>): RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder>() {
 
     class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
-        lateinit var temperature: TextView
-        lateinit var time: TextView
-        lateinit var imgWeather: ImageView
+        var temperature: TextView? = null
+        var time: TextView? = null
+        var imgWeather: ImageView? = null
 
         init {
             temperature = itemView.findViewById(R.id.temperatureView)
@@ -30,17 +30,14 @@ class MyRecyclerAdapter(val context: Context, val array1: List<HourItem?>): Recy
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.temperature.text = "${array1[position]?.tempC.toString()} °C"
-        holder.time.text = array1[position]?.time
+        holder.temperature?.text = context.getString(R.string.temperature_day, data[position]?.tempC.toString())
+        holder.time?.text = data[position]?.time
 
-        Picasso.with(context).load("https:${array1[position]?.condition?.icon}").into(holder.imgWeather);
+        Picasso.with(context).load("https:${data[position]?.condition?.icon}").into(holder.imgWeather);
 
     }
 
-    override fun getItemCount(): Int {
-        return array1.size
-    }
-
+    override fun getItemCount() = data.size
 
 }
 

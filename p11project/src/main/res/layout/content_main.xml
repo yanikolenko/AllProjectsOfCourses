@@ -23,7 +23,7 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#484B5B"
+        android:background="@color/main_app_color"
         android:paddingVertical="5dp"
         app:itemTextColor="@color/white"
         app:labelVisibilityMode="labeled"

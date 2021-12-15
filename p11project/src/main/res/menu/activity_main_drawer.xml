@@ -7,26 +7,26 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/notification"
-            android:title="Сповіщення" />
+            android:title="@string/massages" />
         <item
             android:id="@+id/nav_gallery"
             android:iconTint="@color/white"
             android:icon="@drawable/settings"
-            android:title="Налаштування" />
+            android:title="@string/settings" />
         <item
             android:id="@+id/nav_slideshow"
             android:iconTint="@color/white"
             android:icon="@drawable/report"
-            android:title="Залиш відгук" />
+            android:title="@string/leave_report" />
         <item
             android:id="@+id/nav_report"
             android:iconTint="@color/white"
             android:icon="@drawable/reting"
-            android:title="Оцініть цей відгук" />
+            android:title="@string/report" />
         <item
             android:id="@+id/nav_share"
             android:iconTint="@color/white"
             android:icon="@drawable/share"
-            android:title="Поділіться" />
+            android:title="@string/share" />
     </group>
 </menu>

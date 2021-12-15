@@ -10,40 +10,28 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.yaroslavnikolenko.weatherapplication.R
-import com.yaroslavnikolenko.weatherapplication.ui.dailyWeather.DailyWeather1
+import com.yaroslavnikolenko.weatherapplication.ui.dailyWeather.DailyWeather
 import com.yaroslavnikolenko.weatherapplication.ui.recycler.MyRecyclerAdapter
-import com.yaroslavnikolenko.weatherapplication.ui.twenyFourWeather.FiveDaysWeather
+import com.yaroslavnikolenko.weatherapplication.ui.twenyFourWeather.TwentyFourWeather
 
 class WeatherToday : Fragment() {
 
-    private val dailyWeather by viewModels<DailyWeather1>()
-    private val fiveDaysWeather by viewModels<FiveDaysWeather>()
-    lateinit var temp: TextView
-    lateinit var description: TextView
-    lateinit var wind: TextView
-    lateinit var feelTemperature: TextView
-    lateinit var date: TextView
-    lateinit var recycler: RecyclerView
+    private val dailyWeather by viewModels<DailyWeather>()
+    private val fiveDaysWeather by viewModels<TwentyFourWeather>()
+    private var temp: TextView? = null
+    private var description: TextView? = null
+    private var wind: TextView? = null
+    private var feelTemperature: TextView? = null
+    private var date: TextView? = null
+    private var recycler: RecyclerView? = null
+    private var adapter: MyRecyclerAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        val view = inflater.inflate(R.layout.fragment_blank, container, false)
-
-        temp = view.findViewById(R.id.mainTemperatureView)
-        description = view.findViewById(R.id.descriptionView)
-        wind = view.findViewById(R.id.windView)
-        feelTemperature = view.findViewById(R.id.feelTemperatureView)
-        date = view.findViewById(R.id.dateView)
-        recycler = view.findViewById(R.id.weatherTodayRecyclerView)
-
-        observeUpdate()
-        observeUpdate2()
-        FiveDaysWeather()
-
-        return view
+        return inflater.inflate(R.layout.fragment_weather_today, container, false)
 
 // Залишив код нижче щоб подивитися і згадати якщо треба буде
 //        accessToData2 = DailyWeather()
@@ -53,23 +41,41 @@ class WeatherToday : Fragment() {
 //        }
     }
 
-    private fun observeUpdate() {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        temp = view.findViewById(R.id.mainTemperatureView)
+        description = view.findViewById(R.id.descriptionView)
+        wind = view.findViewById(R.id.windView)
+        feelTemperature = view.findViewById(R.id.feelTemperatureView)
+        date = view.findViewById(R.id.dateView)
+        recycler = view.findViewById(R.id.weatherTodayRecyclerView)
+
+        observeDailyWeather()
+        observeDayWeather()
+        TwentyFourWeather()
+    }
+
+    private fun observeDailyWeather() {
         dailyWeather.resultData.observe(requireActivity()){
-            temp.text = "${it.tempC.toString()} °C"
-            feelTemperature.text = "Feels like: ${it.feelslikeC.toString()} °C"
-            description.text = it.condition?.text
-            wind.text = "Speed of wind:${it.windKph} km/h"
-            date.text = it.lastUpdated
+            temp?.text = getString(R.string.temperature_daily, it.tempC.toString())
+            feelTemperature?.text = getString(R.string.temperature_feel, it.feelslikeC.toString())
+            description?.text = it.condition?.text
+            wind?.text = getString(R.string.wind, it.windKph.toString())
+            date?.text = it.lastUpdated
         }
     }
 
-    private fun observeUpdate2(){
+    private fun observeDayWeather(){
         fiveDaysWeather.resultData.observe(requireActivity()){
-            val adapter = MyRecyclerAdapter(requireContext(), it)
-            recycler.layoutManager = LinearLayoutManager(requireContext())
-            recycler.adapter = adapter
-
+            initAdapter(it)
         }
+    }
+
+    private fun initAdapter(it: List<HourItem?>){
+        adapter = MyRecyclerAdapter(requireContext(), it)
+        recycler?.layoutManager = LinearLayoutManager(requireContext())
+        recycler?.adapter = adapter
     }
 
 

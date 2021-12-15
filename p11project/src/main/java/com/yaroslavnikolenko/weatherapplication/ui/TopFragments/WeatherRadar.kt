@@ -14,7 +14,7 @@ class WeatherRadar : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_blank4, container, false)
+        return inflater.inflate(R.layout.fragment_weather_radar, container, false)
     }
 
 }

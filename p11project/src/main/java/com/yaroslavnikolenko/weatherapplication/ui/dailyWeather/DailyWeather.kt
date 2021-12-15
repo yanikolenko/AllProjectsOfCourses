@@ -4,14 +4,15 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.yaroslavnikolenko.weatherapplication.ui.Current
-import com.yaroslavnikolenko.weatherapplication.ui.MyApi1
-import com.yaroslavnikolenko.weatherapplication.ui.Response1
+import com.yaroslavnikolenko.weatherapplication.ui.CurrentWeatherResponse
+import com.yaroslavnikolenko.weatherapplication.ui.api.WeatherApi
+import com.yaroslavnikolenko.weatherapplication.ui.constants.WeatherConst
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class DailyWeather1: ViewModel() {
+class DailyWeather: ViewModel() {
 
     private val _resultData = MutableLiveData<Current>()
     val resultData: LiveData<Current> = _resultData
@@ -20,25 +21,25 @@ class DailyWeather1: ViewModel() {
         getData()
     }
 
-    fun getData(){
+    private fun getData(){
         val retrofit = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("https://api.weatherapi.com/v1/")
+            .baseUrl(WeatherConst.BASE_URL)
             .build()
-            .create(MyApi1::class.java)
+            .create(WeatherApi::class.java)
 
-        val retrofitData = retrofit.getData()
-        retrofitData.enqueue(object : Callback<Response1?> {
+        val retrofitData = retrofit.getDailyData()
+        retrofitData.enqueue(object : Callback<CurrentWeatherResponse?> {
             override fun onResponse(
-                call: Call<Response1?>,
-                response: retrofit2.Response<Response1?>
+                call: Call<CurrentWeatherResponse?>,
+                response: retrofit2.Response<CurrentWeatherResponse?>
             ) {
                 val body = response.body()?.current
                 _resultData.value = body!!
 
             }
 
-            override fun onFailure(call: Call<Response1?>, t: Throwable) {
+            override fun onFailure(call: Call<CurrentWeatherResponse?>, t: Throwable) {
 
             }
         })

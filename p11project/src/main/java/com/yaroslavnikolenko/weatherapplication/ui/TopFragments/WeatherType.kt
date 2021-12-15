@@ -14,7 +14,7 @@ class WeatherType : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_blank3, container, false)
+        return inflater.inflate(R.layout.fragment_weather_type, container, false)
     }
 
 }

@@ -5,14 +5,16 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.yaroslavnikolenko.weatherapplication.ui.HourItem
 import com.yaroslavnikolenko.weatherapplication.ui.Location
-import com.yaroslavnikolenko.weatherapplication.ui.MyApi1
-import com.yaroslavnikolenko.weatherapplication.ui.Response2
+import com.yaroslavnikolenko.weatherapplication.ui.api.WeatherApi
+import com.yaroslavnikolenko.weatherapplication.ui.TwentyFourWeatherResponse
+import com.yaroslavnikolenko.weatherapplication.ui.constants.WeatherConst
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class FiveDaysWeather: ViewModel() {
+
+class TwentyFourWeather: ViewModel() {
 
     private val _resultData = MutableLiveData<List<HourItem?>>()
     val resultData: LiveData<List<HourItem?>> = _resultData
@@ -24,19 +26,19 @@ class FiveDaysWeather: ViewModel() {
         getData()
     }
 
-    fun getData() {
+    private fun getData() {
 
         val retrofit = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("https://api.weatherapi.com/v1/")
+            .baseUrl(WeatherConst.BASE_URL)
             .build()
-            .create(MyApi1::class.java)
+            .create(WeatherApi::class.java)
 
-        val retrofitData = retrofit.getData2()
-        retrofitData.enqueue(object : Callback<Response2?> {
+        val retrofitData = retrofit.getDayData()
+        retrofitData.enqueue(object : Callback<TwentyFourWeatherResponse?> {
             override fun onResponse(
-                call: Call<Response2?>,
-                response: retrofit2.Response<Response2?>
+                call: Call<TwentyFourWeatherResponse?>,
+                response: retrofit2.Response<TwentyFourWeatherResponse?>
             ) {
                 val body = response.body()
                 val firstStep = body?.forecast?.forecastday!![0]
@@ -46,9 +48,7 @@ class FiveDaysWeather: ViewModel() {
                 _resultLocation.value = body.location!!
             }
 
-            override fun onFailure(call: Call<Response2?>, t: Throwable) {
-                TODO("Not yet implemented")
-            }
+            override fun onFailure(call: Call<TwentyFourWeatherResponse?>, t: Throwable) {}
         })
 
     }
