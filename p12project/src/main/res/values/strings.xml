@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_main">Головна</string>
+    <string name="menu_recomendation">Загальні рекомендації</string>
+    <string name="menu_about_us">Про нас</string>
+    <string name="quakes">Землетруси</string>
+    <string name="tring_about_us">Про нас</string>
+    <string name="some_days_ago">22 дні тому</string>
+    <string name="side_and_kilometers">10 км на Пн-Сх від Токіо</string>
+    <string name="sentensivity">Інтенсивність</string>
+    <string name="size_of_sensitive">1.0–2.0 - ледь відчутний</string>
+    <string name="size_of_quake">Величина</string>
+    <string name="number_of_quake">1.0</string>
+    <string name="date_reform">%s days ago</string>
+
+
+    <string-array name="string_recommendation">
+        <item>"Зберігайте спокій, уникайте паніки."</item>
+        <item>Дійте негайно, як тільки відчуєте коливання ґрунту або споруди, головна небезпека, яка вам загрожує – це предмети і уламки, що падають.</item>
+        <item>Швидко залиште будинок та відійдіть від нього на відкрите місце, якщо ви знаходитесь на першому-другому поверсі.</item>
+        <item>Негайно залиште кутові кімнати, якщо ви знаходитесь вище другого поверху.</item>
+        <item>Негайно перейдіть у більш безпечне місце, якщо ви знаходитесь у приміщенні.Станьте в отворі внутрішніх дверей або у кутку кімнати, подалі від вікон і важких предметів.</item>
+        <item>Не кидайтесь до сходів або до ліфта, якщо ви знаходитесь у висотній споруді вище пятого поверху.Вихід зі споруди найбільш буде заповнений людьми, а ліфти вийдуть із ладу.</item>
+        <item>Вибігайте з будинку швидко, але обережно. Остерігайтесь уламків, електричних дротів та інших джерел небезпеки.</item>
+        <item>Віддаліться від високих споруд, шляхопроводів, мостів та ліній електропередач.</item>
+        <item>Зупиніться, якщо ви їдете автомобілем, відчиніть двері та залишайтесь у автомобілі до припинення коливань.</item>
+        <item>Перевірте, чи немає поблизу постраждалих, сповістіть про них рятувальників та, по можливості, надайте допомогу</item>
+    </string-array>
+
+    <string name="text_about_us">
+        Геологічна служба США (USGS) у співпраці
+        з державними установами, партнерами з
+        університетів та приватною промисловістю
+        розробляє систему раннього
+        попередження про землетруси (EEW) для західного
+        узбережжя Сполучених Штатів під назвою ShakeAlert.
+        Програма землетрусів USGS спрямована на пом’якшення втрат
+        від землетрусу в Сполучених Штатах. Громадяни, служби швидкого
+        реагування та інженери покладаються на USGS для отримання точної
+        та своєчасної інформації про те, де відбуваються землетруси, інтенсивність
+        поштовхів землі в різних місцях, а також ймовірність значного
+        потрясіння землі в майбутньому.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_recommendation">Первинні рекомендації</string>
+
+
+</resources>

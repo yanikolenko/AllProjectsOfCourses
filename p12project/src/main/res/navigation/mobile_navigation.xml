@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.yaroslavnikolenko.myapplication.ui.home.MainFragment"
+        android:label=""
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_nav_home_to_changebleFragment"
+            app:destination="@id/changebleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.yaroslavnikolenko.myapplication.ui.recommendation.RecomendationFragment"
+        android:label=""
+        tools:layout="@layout/fragment_recomendation" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:label=""
+        android:name="com.yaroslavnikolenko.myapplication.ui.about.AboutUsFragment"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/changebleFragment"
+        android:name="com.yaroslavnikolenko.myapplication.changebleFragment.ChangebleFragment"
+        android:label="fragment_changeble"
+        tools:layout="@layout/fragment_changeble" />
+</navigation>
