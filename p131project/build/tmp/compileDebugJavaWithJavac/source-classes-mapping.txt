@@ -1,0 +1,2 @@
+com/google/codelabs/mdc/kotlin/shrine/BuildConfig.java
+ com.google.codelabs.mdc.kotlin.shrine.BuildConfig

@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\menu_shr_toolbar_menu.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\menu\\shr_toolbar_menu.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\drawable_shr_branded_menu.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\drawable\\shr_branded_menu.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\layout_shr_staggered_product_card_second.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\layout\\shr_staggered_product_card_second.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\drawable_shr_menu.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\drawable\\shr_menu.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\layout_shr_login_fragment.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\layout\\shr_login_fragment.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\drawable_shr_close_menu.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\drawable\\shr_close_menu.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\layout_shr_product_grid_fragment.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\layout\\shr_product_grid_fragment.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\layout_shr_staggered_product_card_third.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\layout\\shr_staggered_product_card_third.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\drawable_shr_product_grid_background_shape.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\drawable\\shr_product_grid_background_shape.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\raw_products.json.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\raw\\products.json"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\layout_shr_staggered_product_card_first.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\layout\\shr_staggered_product_card_first.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\drawable_shr_filter.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\drawable\\shr_filter.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\drawable_shr_search.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\drawable\\shr_search.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\layout_shr_main_activity.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\layout\\shr_main_activity.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\layout_shr_backdrop.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\layout\\shr_backdrop.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\layout_shr_product_card.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\layout\\shr_product_card.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\drawable_shr_logo.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\drawable\\shr_logo.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\animator_shr_next_button_state_list_anim.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\animator\\shr_next_button_state_list_anim.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\FirstScreenCourses\\p131project\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    }
+]
