@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">QuakeReload</string>
+    <string name="drawer_main">Головна</string>
+    <string name="drawer_recommendation">Загальні рекомендації</string>
+    <string name="drawer_about_us">Про нас</string>
+    <string name="text_quakes">Землетруси</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tool_bar_text">Землетруси</string>
+    <string name="text_about_us">Про нас</string>
+    <string name="all_text_about_us">Геологічна служба США (USGS) у співпраці з державними установами,
+        партнерами з університетів та приватною промисловістю розробляє систему раннього попередження
+        про землетруси (EEW) для західного узбережжя Сполучених Штатів під назвою ShakeAlert. Програма
+        землетрусів USGS спрямована на пом’якшення втрат від землетрусу в Сполучених Штатах. Громадяни,
+        служби швидкого реагування та інженери покладаються на USGS для отримання точної та своєчасної
+        інформації про те, де відбуваються землетруси,
+        інтенсивність поштовхів землі в різних місцях, а також ймовірність значного потрясіння землі в майбутньому.</string>
+    <string name="sensitivity_text">Інтенсивність</string>
+    <string name="size_text">Величина</string>
+</resources>

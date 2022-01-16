@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/drawer_main">
+
+    <fragment
+        android:id="@+id/drawer_main"
+        android:name="com.yaroslavnikolenko.quakereload.ui.DrawerFragments.MainFragment"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_drawer_main_to_infoAboutQuakeFragment"
+            app:destination="@id/infoAboutQuakeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawer_recommendation"
+        android:name="com.yaroslavnikolenko.quakereload.ui.DrawerFragments.RecommendationFragment"
+        tools:layout="@layout/fragment_recommendation" />
+    <fragment
+        android:id="@+id/drawer_about_us"
+        android:name="com.yaroslavnikolenko.quakereload.ui.DrawerFragments.AboutUsFragment"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/infoAboutQuakeFragment"
+        android:name="com.yaroslavnikolenko.quakereload.ui.DrawerFragments.InfoAboutQuakeFragment"
+        tools:layout="@layout/fragment_info_about_quake" >
+        <action
+            android:id="@+id/action_infoAboutQuakeFragment_to_drawer_main"
+            app:destination="@id/drawer_main" />
+        <argument
+            android:name="infoAboutQuake"
+            app:argType="string[]" />
+    </fragment>
+</navigation>
