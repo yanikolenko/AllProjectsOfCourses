@@ -46,6 +46,8 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding?.appBarMain?.toolbar)
 
+
+
         drawerLayout = binding?.drawerLayout
         navView = binding?.navView
     }

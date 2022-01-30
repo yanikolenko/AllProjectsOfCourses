@@ -14,8 +14,8 @@ class CountDaysAgo(private val chooseMonth: Int, private val chooseDay: Int) {
     var j = 0
 
     private val date = Calendar.getInstance().time
-    private val month = SimpleDateFormat("MM")
-    private val day = SimpleDateFormat("dd")
+    private val month = SimpleDateFormat("MM", Locale.getDefault())
+    private val day = SimpleDateFormat("dd", Locale.getDefault())
     private val formatedMonth = month.format(date).toInt()
     private val formatedDay= day.format(date).toInt()
 
