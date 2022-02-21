@@ -1,14 +1,16 @@
 package com.yaroslavnikolenko.quakereload
 
+import android.app.TaskStackBuilder
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.Toolbar
+import androidx.fragment.app.FragmentManager
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import androidx.navigation.ui.*
 import com.yaroslavnikolenko.quakereload.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(){
@@ -55,6 +57,24 @@ class MainActivity : AppCompatActivity(){
         bindingMainActivity = null
     }
 
+    override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.toolbar_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId){
+            R.id.mapFragment -> {
+
+                val intent = Intent(this, MapActivity::class.java)
+
+                startActivity(intent)
+
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
 
 }

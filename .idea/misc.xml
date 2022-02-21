@@ -47,11 +47,28 @@
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p12project/src/main/res/layout/recycler_recommendation_item.xml" value="0.2749094202898551" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p12project/src/main/res/menu/activity_main_drawer.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p12project/src/main/res/menu/main.xml" value="0.28425925925925927" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/dotted_horizontal_line.xml" value="0.22763157894736843" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/dotted_vertcal_line.xml" value="0.22763157894736843" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/drawable_icon_home.xml" value="0.22763157894736843" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/group_of_rings.xml" value="0.22763157894736843" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/ic_marker.xml" value="0.22763157894736843" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/ic_open_map.xml" value="0.22763157894736843" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/main_recycler_location_icon.xml" value="0.22763157894736843" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/main_recycler_wave_icon.xml" value="0.22763157894736843" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/recommendation_hide.xml" value="0.22763157894736843" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/recommendation_weight.xml" value="0.22763157894736843" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/rounded_bottom_sheet.xml" value="0.22763157894736843" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/drawable/sircle.xml" value="0.22763157894736843" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/layout/activity_main.xml" value="0.3087719298245614" />
-        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/layout/main_recycler_item.xml" value="0.264" />
-        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/layout/my_tool_bar.xml" value="0.3087719298245614" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/layout/activity_map.xml" value="0.17255434782608695" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/layout/activity_splash_screen.xml" value="0.17889492753623187" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/layout/fragment_about_us.xml" value="0.17889492753623187" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/layout/fragment_map.xml" value="0.17889492753623187" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/layout/main_recycler_item.xml" value="0.23416506717850288" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/layout/my_tool_bar.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/layout/recommendation_recycler_item.xml" value="0.21403508771929824" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/menu/drawer_menu.xml" value="0.3087719298245614" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/menu/toolbar_menu.xml" value="0.21403508771929824" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p132project/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3223684210526316" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p141/src/main/res/drawable/empty_list.xml" value="0.2767543859649123" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p141/src/main/res/drawable/floating_icon.xml" value="0.3223684210526316" />
@@ -63,6 +80,11 @@
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p141/src/main/res/layout/main_recycler_item.xml" value="0.3087719298245614" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p141/src/main/res/layout/tool_bar.xml" value="0.3087719298245614" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p141/src/main/res/menu/toolbar_menu.xml" value="0.3087719298245614" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p141project/src/main/res/layout/activity_add_list.xml" value="0.21403508771929824" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p141project/src/main/res/layout/activity_main.xml" value="0.21403508771929824" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p141project/src/main/res/layout/add_lists_recycler_item.xml" value="0.21403508771929824" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p141project/src/main/res/layout/add_tasks_recycler_item.xml" value="0.21403508771929824" />
+        <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p141project/src/main/res/menu/toolbar_menu.xml" value="0.21403508771929824" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p52project/src/main/res/layout/activity_main.xml" value="0.16622807017543859" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p61project/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24517543859649124" />
         <entry key="..\:/AndroidStudioProjects/FirstScreenCourses/p61project/src/main/res/drawable/btn_angels.xml" value="0.24517543859649124" />

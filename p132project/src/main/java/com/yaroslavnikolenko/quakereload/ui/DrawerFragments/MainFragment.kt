@@ -23,7 +23,9 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        fragmentMainBinding = FragmentMainBinding.inflate(layoutInflater, container, false)
+        if (fragmentMainBinding == null){
+            fragmentMainBinding = FragmentMainBinding.inflate(layoutInflater, container, false)
+        }
 
         return fragmentMainBinding?.root
     }
@@ -48,6 +50,7 @@ class MainFragment : Fragment() {
         viewModel?.allFieldsOfQuakeApi?.observe(viewLifecycleOwner, Observer {
 
             mainRecycler?.setApiQuakeList(it)
+            println(it)
             fragmentMainBinding?.mainRecycler?.adapter = mainRecycler
 
             fragmentMainBinding?.progressBar?.visibility = View.INVISIBLE
@@ -58,9 +61,7 @@ class MainFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         fragmentMainBinding = null
+
     }
-
-
-
 
 }

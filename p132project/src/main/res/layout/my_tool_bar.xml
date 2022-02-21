@@ -14,7 +14,8 @@
             android:id="@+id/mainToolBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/tool_bar_back" >
+            android:background="@color/tool_bar_back"
+            app:menu="@menu/toolbar_menu">
 
             <TextView
                 android:layout_width="wrap_content"

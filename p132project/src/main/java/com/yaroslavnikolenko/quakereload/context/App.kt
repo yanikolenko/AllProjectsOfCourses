@@ -1,10 +1,12 @@
-package com.yaroslavnikolenko.quakereload.app
+package com.yaroslavnikolenko.quakereload.context
 
 import android.app.Application
+import com.google.android.gms.maps.MapsInitializer
 
 class App: Application() {
 
-    companion object{
-
+    override fun onCreate() {
+        super.onCreate()
+        MapsInitializer.initialize(applicationContext, MapsInitializer.Renderer.LATEST, null)
     }
 }

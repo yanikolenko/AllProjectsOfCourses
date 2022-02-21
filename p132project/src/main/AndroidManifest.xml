@@ -3,6 +3,9 @@
     package="com.yaroslavnikolenko.quakereload">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,10 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuakeReload">
         <activity
+            android:name=".MapActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name="com.yaroslavnikolenko.quakereload.ui.SplashActivity.SplashScreenActivity"
+            android:name=".ui.SplashActivity.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +29,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAhPC8stm2-gDARX_b2nmXHPzPET53iRQY" />
     </application>
 
 </manifest>
