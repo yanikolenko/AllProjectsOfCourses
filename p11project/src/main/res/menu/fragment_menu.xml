@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/menu_today"
+        android:id="@+id/WeatherTodayFragment"/>
+    <item
+        android:title="@string/menu_forecast"
+        android:id="@+id/WeatherRadarFragment"/>
+    <item
+        android:title="@string/menu_precipitation"
+        android:id="@+id/WeatherForecastFragment"/>
+    <item
+        android:title="@string/menu_radar"
+        android:id="@+id/WeatherTypeFragment"/>
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <group android:id="@+id/groupOfAnimals">-->
+<!--        <item android:id="@+id/fistStickerPack" android:title="@string/firstStickerPack">-->
+<!--            <menu>-->
+<!--                <item android:id="@+id/firstInFirst" android:title="@string/firstInFirst"/>-->
+<!--                <item android:id="@+id/secondInFirst" android:title="@string/secondInFirst"/>-->
+<!--                <item android:id="@+id/thirdInFirst" android:title="@string/thirdInFirst"/>-->
+<!--            </menu>-->
+<!--        </item>-->
+
+<!--        <item android:id="@+id/secondStickerPack" android:title="@string/secondStickerPack">-->
+<!--            <menu>-->
+<!--                <item android:id="@+id/firstInSecond" android:title="@string/firstInSecond"/>-->
+<!--                <item android:id="@+id/secondInSecond" android:title="@string/secondInSecond"/>-->
+<!--                <item android:id="@+id/thirdInSecond" android:title="@string/thirdInSecond"/>-->
+<!--            </menu>-->
+<!--        </item>-->
+
+<!--        <item android:id="@+id/thirdStickerPack" android:title="@string/thirdStickerPack">-->
+<!--            <menu>-->
+<!--                <item android:id="@+id/firstInThird" android:title="@string/firstInThird"/>-->
+<!--                <item android:id="@+id/secondInThird" android:title="@string/secondInThird"/>-->
+<!--                <item android:id="@+id/thirdInThird" android:title="@string/thirdInThird"/>-->
+<!--            </menu>-->
+<!--        </item>-->
+<!--    </group>-->
+
+
+    <group android:id="@+id/groupOfAnimals" android:visible="true">
+        <item android:id="@+id/firstAnimal" android:title="@string/firstAnimal">
+            <menu>
+                <item android:id="@+id/retriever" android:title="@string/retrieverName"/>
+                <item android:id="@+id/hedgehog" android:title="@string/hedgehogName"/>
+                <item android:id="@+id/cat" android:title="@string/catName"/>
+            </menu>
+        </item>
+
+        <item android:id="@+id/secondAnimal" android:title="@string/secondAnimal">
+            <menu>
+                <item android:id="@+id/crow" android:title="@string/crowName"/>
+                <item android:id="@+id/sparrow" android:title="@string/sparrowName"/>
+                <item android:id="@+id/owl" android:title="@string/owlName"/>
+            </menu>
+        </item>
+
+        <item android:id="@+id/thirdAnimal" android:title="@string/thirdAnimal">
+            <menu>
+                <item android:id="@+id/iguana" android:title="@string/iguanaName"/>
+                <item android:id="@+id/snake" android:title="@string/snakeName"/>
+                <item android:id="@+id/frog" android:title="@string/frogName"/>
+            </menu>
+        </item>
+    </group>
+
+    <group android:id="@+id/groupOfPlants" android:visible="true">
+        <item android:id="@+id/firstPlant" android:title="@string/firstPlant">
+            <menu>
+                <item android:id="@+id/xlorela" android:title="@string/xlorelaName"/>
+                <item android:id="@+id/volvoks" android:title="@string/volvoksName"/>
+                <item android:id="@+id/voltriks" android:title="@string/voltriksName"/>
+            </menu>
+        </item>
+
+        <item android:id="@+id/secondPlant" android:title="@string/secondPlant">
+            <menu>
+                <item android:id="@+id/brium" android:title="@string/briumName"/>
+                <item android:id="@+id/dikran" android:title="@string/dikranName"/>
+                <item android:id="@+id/hylocomium" android:title="@string/hylocomiumName"/>
+            </menu>
+        </item>
+
+        <item android:id="@+id/thirdPlant" android:title="@string/thirdPlant">
+            <menu>
+                <item android:id="@+id/yalitsa" android:title="@string/yalitsaName"/>
+                <item android:id="@+id/modrina" android:title="@string/modrinaName"/>
+                <item android:id="@+id/sosna" android:title="@string/sosnaName"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>

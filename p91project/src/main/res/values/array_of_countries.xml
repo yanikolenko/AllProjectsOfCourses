@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nameOfCount">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+    </string-array>
+
+    <integer-array name="flags">
+        <item>@drawable/afghanistan</item>
+        <item>@drawable/albania</item>
+        <item>@drawable/algeria</item>
+        <item>@drawable/andorra</item>
+    </integer-array>
+</resources>

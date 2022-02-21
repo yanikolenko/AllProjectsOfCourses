@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Списки справ</string>
+    <string name="empty_list">Список пустий</string>
+    <string name="task_name">Напишіть назву</string>
+    <string name="add_task_dialog">Додати задачу</string>
+    <string name="task_name_dialog">Назва задачі</string>
+    <string name="delete_list">Видалити список ?</string>
+    <string name="count_complete_tasks">%s/%s</string>
+    <string name="add_task">Додати</string>
+    <string name="cancel_task">Відмінити</string>
+    <string name="delete_list_dialog">Видалити</string>
+    <string name="cancel_delete_list">Відмінити</string>
+</resources>
