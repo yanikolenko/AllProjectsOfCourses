@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="60dp"
+    tools:context=".ui.DrawerFragments.InfoAboutQuakeFragment">
+
+    <TextView
+        android:id="@+id/infoFragment_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/main_text_color"
+        android:textSize="17sp"
+        app:drawableStartCompat="@drawable/main_recycler_time_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="22 дні тому" />
+
+    <TextView
+        android:id="@+id/infoFragment_location_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/main_text_color"
+        android:textSize="17sp"
+        app:drawableStartCompat="@drawable/main_recycler_location_icon"
+        app:layout_constraintEnd_toEndOf="@+id/infoFragment_time_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/infoFragment_time_view"
+        app:layout_constraintTop_toBottomOf="@+id/infoFragment_time_view"
+        tools:text="10 км на Пн-Сх від Токіо" />
+
+    <TextView
+        android:id="@+id/textViewInfoFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:alpha="0.5"
+        android:text="@string/sensitivity_text"
+        android:textColor="@color/main_text_color"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoFragment_location_view"
+        app:layout_constraintEnd_toStartOf="@+id/viewInfoFragment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoFragment_location_view" />
+
+    <TextView
+        android:id="@+id/infoFragment_sensitive_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/green"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="3dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewInfoFragment"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewInfoFragment"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfoFragment"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Ледь відчутний" />
+
+    <View
+        android:id="@+id/viewInfoFragment"
+        android:layout_width="3dp"
+        android:layout_height="50dp"
+        android:background="@drawable/dotted_vertcal_line"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewInfoFragment"
+        app:layout_constraintEnd_toStartOf="@+id/textViewInfoFragment1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewInfoFragment"
+        app:layout_constraintTop_toTopOf="@+id/textViewInfoFragment"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewInfoFragment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:text="@string/size_text"
+        android:textColor="@color/main_text_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewInfoFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/viewInfoFragment"
+        app:layout_constraintTop_toTopOf="@+id/viewInfoFragment"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:textColor="@color/main_text_color"
+        android:id="@+id/infoFragment_wave_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/main_recycler_wave_icon"
+        app:layout_constraintEnd_toEndOf="@+id/textViewInfoFragment1"
+        app:layout_constraintStart_toStartOf="@+id/textViewInfoFragment1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfoFragment1"
+        tools:text="1.0" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/dotted_horizontal_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewInfoFragment" />
+
+    <TextView
+        android:id="@+id/firstRecommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/drawer_recommendation"
+        android:textAllCaps="true"
+        android:textColor="@color/main_text_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="32dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/item_icon_tint"
+        app:layout_constraintEnd_toEndOf="@+id/firstRecommendation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstRecommendation"
+        app:layout_constraintTop_toBottomOf="@+id/firstRecommendation" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/recommendation_hide"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/recommendation_weight"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

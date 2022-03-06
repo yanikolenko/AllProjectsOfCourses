@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.yaroslavnikolenko.alotrecyclers.fragments.FirstFragment"
+        android:label="Simple Recycler"
+        tools:layout="@layout/fragment_first" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.yaroslavnikolenko.alotrecyclers.fragments.SecondFragment"
+        android:label="Good Recycler"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.yaroslavnikolenko.alotrecyclers.fragments.ThirdFragment"
+        android:label="Random Recycler"
+        tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.yaroslavnikolenko.alotrecyclers.fragments.FourthFragment"
+        android:label="Recycler Gallery"
+        tools:layout="@layout/fragment_fourth" >
+        <action
+            android:id="@+id/action_fourthFragment_to_addSomeInfo"
+            app:destination="@id/addSomeInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifthFragment"
+        android:name="com.yaroslavnikolenko.alotrecyclers.fragments.FifthFragment"
+        android:label="Recycler Camera"
+        tools:layout="@layout/fragment_fifth" >
+        <action
+            android:id="@+id/action_fifthFragment_to_addSomeInfo"
+            app:destination="@id/addSomeInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSomeInfo"
+        android:name="com.yaroslavnikolenko.alotrecyclers.fragments.AddSomeInfo"
+        android:label="fragment_add_some_info"
+        tools:layout="@layout/fragment_add_some_info" >
+        <action
+            android:id="@+id/action_addSomeInfo_to_fifthFragment"
+            app:destination="@id/fifthFragment" />
+        <action
+            android:id="@+id/action_addSomeInfo_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+    </fragment>
+</navigation>

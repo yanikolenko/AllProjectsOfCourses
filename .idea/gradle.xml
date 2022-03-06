@@ -7,13 +7,23 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="11" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/p10project" />
+            <option value="$PROJECT_DIR$/p11project" />
+            <option value="$PROJECT_DIR$/p12project" />
+            <option value="$PROJECT_DIR$/p131project" />
+            <option value="$PROJECT_DIR$/p132project" />
+            <option value="$PROJECT_DIR$/p141project" />
             <option value="$PROJECT_DIR$/p51project" />
             <option value="$PROJECT_DIR$/p52project" />
             <option value="$PROJECT_DIR$/p61project" />
             <option value="$PROJECT_DIR$/p62project" />
+            <option value="$PROJECT_DIR$/p71project" />
+            <option value="$PROJECT_DIR$/p81project" />
+            <option value="$PROJECT_DIR$/p91project" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

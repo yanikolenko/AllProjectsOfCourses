@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Довідник</string>
+<!--    <string name="firstStickerPack"><b>Перший стікер пак</b></string>-->
+<!--    <string name="firstInFirst">Злюка</string>-->
+<!--    <string name="secondInFirst">Смайл</string>-->
+<!--    <string name="thirdInFirst">Проблеми</string>-->
+<!--    <string name="fourthInFirst">Не зрозумів</string>-->
+<!--    <string name="secondStickerPack"><b>Другий стікер пак</b></string>-->
+<!--    <string name="firstInSecond">Щось</string>-->
+<!--    <string name="secondInSecond">Щось</string>-->
+<!--    <string name="thirdInSecond">Щось</string>-->
+<!--    <string name="thirdStickerPack"><b>Третій стікер пак</b></string>-->
+<!--    <string name="firstInThird">Щось</string>-->
+<!--    <string name="secondInThird">Щось</string>-->
+<!--    <string name="thirdInThird">Щось</string>-->
+    <string name="catName">Весловухий кіт</string>
+    <string name="crowName">Ворона</string>
+    <string name="frogName">Йосемітська жаба</string>
+    <string name="hedgehogName">Їжак звичайний</string>
+    <string name="iguanaName">Ігуана</string>
+    <string name="owlName">Сніжна сова</string>
+    <string name="retrieverName">Золотистий ретрівер</string>
+    <string name="snakeName">Коричнева кобра</string>
+    <string name="sparrowName">Горобець</string>
+
+    <string name="catDescribe">Скоттіш-фолд, Шотландська капловуха, Шотландська висловуха (англ. Scottish fold, SFS)  — порода кішок з характерною будовою вушних раковин, які загнуті вперед і вниз.</string>
+    <string name="crowDescribe">Кру́к або ворона (Corvus) — рід великих птахів, типовий рід родини воронових (Corvidae) з ряду горобцеподібних (Passeriformes).</string>
+    <string name="frogDescribe">Жаба йосемітська (Anaxyrus canorus) — вид середніх за розміром (4,4 — 7 см завдовжки) жаб, поширений в горах Сьєрра-Невада в Каліфорнії. Нагадує західну американську жабу, але має гладку шкіру.</string>
+    <string name="hedgehogDescribe">Їжа́к європе́йський, або їжа́к звича́йний (Erinaceus europaeus) — комахоїдний ссавець родини Їжакових. Один з 4-х видів свого роду. Поширений на більшій частині Європи</string>
+    <string name="iguanaDescribe">Ігуана (Iguana) — рід ящірок з родини Ігуанових. Має 3 види. Інші назви «справжня ігуана».</string>
+    <string name="owlDescribe">Сова біла (Nyctea scandiaca, Bubo scandiacus) — один з найбільших птахів ряду совоподібних. В Україні рідкісний залітний вид. Зрідка можна зустріти взимку в лісовій та лісостеповій смугах, іноді в степовій зоні, здебільшого на відкритих просторах.</string>
+    <string name="retrieverDescribe">Золотистий ретривер (Голден ретривер) (англ. Golden Retriever, від Golden - золотистий, retrieve - подавати) — порода мисливських підрушничних собак.</string>
+    <string name="snakeDescribe">Західна коричнева змія (Pseudonaja nuchalis) — отруйна змія з роду Несправжні кобри родини Аспідові.</string>
+    <string name="sparrowDescribe">Горобе́ць х́атній (Passer domesticus) — найпоширеніший вид роду горобців (Passer), родини горобцевих (Passeridae). Це один із найвідоміших птахів, що живуть по сусідству із житлом людини (звідси його видова назва «хатній»). Добре пізнаваний як за зовнішнім виглядом, так і за характерним цвіріньканням.</string>
+
+    <string name="briumName">Бріум сріблястий</string>
+    <string name="dikranName">Дикран віничний</string>
+    <string name="hylocomiumName">Гілокомій блискучий</string>
+    <string name="yalitsaName">Ялиця</string>
+    <string name="modrinaName">Модрина</string>
+    <string name="sosnaName">Сосна</string>
+    <string name="xlorelaName">Хлорела</string>
+    <string name="volvoksName">Вольвокс</string>
+    <string name="voltriksName">Улотрикс</string>
+
+    <string name="briumDescribe">Бріум сріблястий — вид мохів. Один з найпоширеніших по всьому світу видів мохів, що легко розпізнається завдяки своєму сріблясто-зеленому «листю».</string>
+    <string name="dikranDescribe">Дикран віничний — вид листостеблових мохів родини дикранові. Широко поширений в Україні, росте у хвойних лісах.</string>
+    <string name="hylocomiumDescribe">Гілокомій блискучий — вид листкостеблових мохів родини гілокомієві.</string>
+    <string name="yalitsaDescribe">Ялиця — рід вічнозелених однодомних дерев з родини соснових. Етимологічно слово Abies походить від стародавньої латинської назви ялиці.</string>
+    <string name="modrinaDescribe">Модрина — рід дерев родини соснових. Дерева в основному заввишки 15–45 м, мають відкриту крону і вузькі гілки.</string>
+    <string name="sosnaDescribe">Сосна— рід хвойних дерев родини соснових. Це дерева або чагарники, ароматичні, вічнозелені; крона зазвичай конічна у молодих рослин, часто стає округлою або плосковерхою з віком.</string>
+    <string name="xlorelaDescribe">Хлорела — рід мікроскопічних одноклітинних зелених водоростей, має вигляд мікроскопічної нерухомої кульки від 2 до 10 мкм у діаметрі.</string>
+    <string name="volvoksDescribe">Вольвокс — рід зелених водоростей. Представники цього роду утворюють сферичні колонії кулястої або сферичної форми розміром до 2 мм.</string>
+    <string name="voltriksDescribe">Улотрикс — рід багатоклітинних зелених водоростей. За інформацією бази даних AlgaeBase містить 40 визнаних видів. Улотрикс дуже поширений у річках, живе, прикріплюючись до підводних предметів, утворюючи яскраво-зелені обростання.</string>
+    <string name="firstAnimal">Ссавці</string>
+    <string name="secondAnimal">Птахи</string>
+    <string name="thirdAnimal">Земноводні</string>
+    <string name="firstPlant">Зелені водорості</string>
+    <string name="secondPlant">Мохоподібні</string>
+    <string name="thirdPlant">Насінні</string>
+
+</resources>
