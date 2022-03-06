@@ -1,4 +1,3 @@
 package com.yaroslavnikolenko.quakereload.AdditionalClasses
 
-class ConvertStrToList {
-}
+fun convertStrToList(value: String): List<String> =  listOf(*value.split(",").toTypedArray())

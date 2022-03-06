@@ -1,6 +1,5 @@
 package com.yaroslavnikolenko.quakereload
 
-import android.app.TaskStackBuilder
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,10 +7,10 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.Toolbar
-import androidx.fragment.app.FragmentManager
 import androidx.navigation.findNavController
 import androidx.navigation.ui.*
 import com.yaroslavnikolenko.quakereload.databinding.ActivityMainBinding
+import com.yaroslavnikolenko.quakereload.ui.Map.MapActivity
 
 class MainActivity : AppCompatActivity(){
 

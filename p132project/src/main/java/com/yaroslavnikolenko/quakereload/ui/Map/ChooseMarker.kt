@@ -1,4 +1,4 @@
-package com.yaroslavnikolenko.quakereload.AdditionalClasses
+package com.yaroslavnikolenko.quakereload.ui.Map
 
 import androidx.annotation.DrawableRes
 import com.yaroslavnikolenko.quakereload.R

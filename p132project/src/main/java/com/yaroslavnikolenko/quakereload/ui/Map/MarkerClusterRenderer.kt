@@ -1,25 +1,20 @@
-package com.yaroslavnikolenko.quakereload
+package com.yaroslavnikolenko.quakereload.ui.Map
 
 import android.content.Context
-import android.widget.Toast
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.BitmapDescriptor
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
-import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.maps.android.clustering.Cluster
 import com.google.maps.android.clustering.ClusterManager
 import com.google.maps.android.clustering.view.DefaultClusterRenderer
-import com.yaroslavnikolenko.quakereload.AdditionalClasses.MyItem
 import com.yaroslavnikolenko.quakereload.AdditionalClasses.addTextToBitmap
-import com.yaroslavnikolenko.quakereload.AdditionalClasses.chooseMarker
-import java.lang.StringBuilder
 
-class MarkerClusterRenderer(val context: Context, mMap: GoogleMap, clusterManager: ClusterManager<MyItem>):
-    DefaultClusterRenderer<MyItem>(context, mMap, clusterManager){
+class MarkerClusterRenderer(val context: Context, mMap: GoogleMap, clusterManager: ClusterManager<MarkerItem>):
+    DefaultClusterRenderer<MarkerItem>(context, mMap, clusterManager){
 
     override fun onBeforeClusterItemRendered(
-        item: MyItem,
+        item: MarkerItem,
         markerOptions: MarkerOptions
     ) {
         super.onBeforeClusterItemRendered(item, markerOptions)
@@ -27,14 +22,12 @@ class MarkerClusterRenderer(val context: Context, mMap: GoogleMap, clusterManage
         markerOptions.icon(BitmapDescriptorFactory.fromResource(chooseMarker(item.title.toDouble()).typeofMarker))
     }
 
-    override fun getDescriptorForCluster(cluster: Cluster<MyItem>): BitmapDescriptor {
+    override fun getDescriptorForCluster(cluster: Cluster<MarkerItem>): BitmapDescriptor {
 
         var x = 0.0
         cluster.items.forEach {
             x += it.title.toDouble()
         }
-
-
 
         return when (x / cluster.items.size){
             in 1.0..2.0 -> {
@@ -56,10 +49,6 @@ class MarkerClusterRenderer(val context: Context, mMap: GoogleMap, clusterManage
                 BitmapDescriptorFactory.fromBitmap(addTextToBitmap(context, rounding(x / cluster.items.size)))
             }
         }
-
-        //println(x / cluster.items.size)
-
-
 
     }
 

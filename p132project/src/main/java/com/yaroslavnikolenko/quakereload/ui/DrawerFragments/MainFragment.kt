@@ -50,7 +50,7 @@ class MainFragment : Fragment() {
         viewModel?.allFieldsOfQuakeApi?.observe(viewLifecycleOwner, Observer {
 
             mainRecycler?.setApiQuakeList(it)
-            println(it)
+
             fragmentMainBinding?.mainRecycler?.adapter = mainRecycler
 
             fragmentMainBinding?.progressBar?.visibility = View.INVISIBLE

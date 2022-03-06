@@ -1,9 +1,9 @@
-package com.yaroslavnikolenko.quakereload.AdditionalClasses
+package com.yaroslavnikolenko.quakereload.ui.Map
 
 import com.google.android.gms.maps.model.LatLng
 import com.google.maps.android.clustering.ClusterItem
 
-class MyItem(
+class MarkerItem(
     lat: Double,
     lng: Double,
     title: String,

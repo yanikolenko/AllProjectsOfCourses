@@ -1,4 +1,4 @@
-package com.yaroslavnikolenko.quakereload
+package com.yaroslavnikolenko.quakereload.ui.Map
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +15,7 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.maps.android.clustering.ClusterManager
 import com.yaroslavnikolenko.quakereload.AdditionalClasses.*
+import com.yaroslavnikolenko.quakereload.R
 import com.yaroslavnikolenko.quakereload.api.QuakeGetData
 import com.yaroslavnikolenko.quakereload.databinding.ActivityMapBinding
 import com.yaroslavnikolenko.quakereload.api.FeaturesItem
@@ -32,9 +33,9 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     private var flag = false
 
     private var array: List<String>? = null
-    private var prevValue: MyItem? = null
+    private var prevValue: MarkerItem? = null
     private var infoAboutCheckedMarker: LatLng? = null
-    private var clusterManager: ClusterManager<MyItem>? = null
+    private var clusterManager: ClusterManager<MarkerItem>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -80,7 +81,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         MapListeners()
     }
 
-    fun changeCheckedMarker(value: MyItem){
+    fun changeCheckedMarker(value: MarkerItem){
         markerClusterRenderer!!.getMarker(prevValue)
             ?.setIcon(BitmapDescriptorFactory.fromResource(chooseMarker(prevValue?.title!!.toDouble()).typeofMarker))
 
@@ -121,7 +122,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
             val infoToBottomSheet = "${i?.properties?.magnitude}, ${i?.properties?.locality}, ${i?.properties?.time!!}, ${i.geometry?.coordinates!![1]!!}, ${i.geometry.coordinates[0]!!}"
 
             clusterManager?.renderer = markerClusterRenderer
-            clusterManager?.addItem(MyItem(i.geometry.coordinates[1]!!, i.geometry.coordinates[0]!!, "${i.properties.magnitude}", infoToBottomSheet))
+            clusterManager?.addItem(MarkerItem(i.geometry.coordinates[1]!!, i.geometry.coordinates[0]!!, "${i.properties.magnitude}", infoToBottomSheet))
 
             mMap?.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(i.geometry.coordinates[1]!!, i.geometry.coordinates[0]!!), 8f))
 
